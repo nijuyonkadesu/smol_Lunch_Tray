@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">smol Lunch Tray</string>
     <string name="start_btn">ORDER !</string>
+    <string name="cauliflower">Cauliflower</string>
+    <string name="bean">Three Bean Chilli</string>
+    <string name="pasta">Mushroom Pasta</string>
+    <string name="skillet">Spicy Black Bean Skillet</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

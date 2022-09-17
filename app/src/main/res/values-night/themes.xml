@@ -1,6 +1,6 @@
 
 <resources>
-    <style name="Theme.SmolLunchTray" parent="Theme.Material3.Dark.NoActionBar">
+    <style name="Theme.SmolLunchTray" parent="Theme.Material3.Dark">
         <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
         <item name="colorOnError">@color/md_theme_dark_onError</item>
         <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>

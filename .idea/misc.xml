@@ -3,9 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/24k/AndroidStudioProjects/smolLunchTray/app/src/main/res/drawable/ic_launcher_background.xml" value="0.199" />
-        <entry key="..\:/Users/24k/AndroidStudioProjects/smolLunchTray/app/src/main/res/drawable/ic_lunch_box.xml" value="0.2295" />
-        <entry key="..\:/Users/24k/AndroidStudioProjects/smolLunchTray/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/24k/AndroidStudioProjects/smolLunchTray/app/src/main/res/layout/activity_main.xml" value="0.33469202898550726" />
+        <entry key="..\:/Users/24k/AndroidStudioProjects/smolLunchTray/app/src/main/res/layout/fragment_entree.xml" value="0.5" />
+        <entry key="..\:/Users/24k/AndroidStudioProjects/smolLunchTray/app/src/main/res/layout/fragment_sidedish.xml" value="0.33469202898550726" />
       </map>
     </option>
   </component>
