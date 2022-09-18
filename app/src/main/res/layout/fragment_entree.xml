@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-<!--TODO(side dish reference)-->
+        <variable
+            name="entreeFragment"
+            type="com.njk.smollunchtray.EntreeFragment" />
+        <variable
+            name="viewModel"
+            type="com.njk.smollunchtray.model.LunchViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,7 +34,7 @@
                         style="@style/RadioTextBig"
                         tools:text="Cauliflower"
                         android:text="@string/cauliflower"
-
+                        android:onClick="@{()->entreeFragment.chooseEntree(1)}"
                         android:id="@+id/radio_button_1"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
@@ -37,6 +42,7 @@
                     <RadioButton
                         tools:text="bean"
                         android:text="@string/bean"
+                        android:onClick="@{()->entreeFragment.chooseEntree(2)}"
                         android:id="@+id/radio_button_2"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
@@ -44,6 +50,7 @@
                     <RadioButton
                         tools:text="pasta"
                         android:text="@string/pasta"
+                        android:onClick="@{()->entreeFragment.chooseEntree(3)}"
                         android:id="@+id/radio_button_3"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
@@ -51,11 +58,17 @@
                     <RadioButton
                         tools:text="skillet"
                         android:text="@string/skillet"
+                        android:onClick="@{()->entreeFragment.chooseEntree(4)}"
                         android:id="@+id/radio_button_4"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
                 </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:text="@{@string/subtotal(viewModel.subtotal)}" />
                 <Button
                     android:id="@+id/next_btn"
                     android:layout_width="match_parent"
