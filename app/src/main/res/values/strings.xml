@@ -11,4 +11,8 @@
     <string name="start_btn">ORDER !</string>
     <string name="cancel_btn">Cancel</string>
     <string name="subtotal">Subtotal %s</string>
+    <string name="salad">Summer Salad</string>
+    <string name="soup">Butternut Squash Soup</string>
+    <string name="potato">Spicy Potato</string>
+    <string name="rice">Coconut Rice</string>
 </resources>

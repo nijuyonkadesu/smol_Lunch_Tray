@@ -14,5 +14,13 @@
     <fragment
         android:id="@+id/entreeFragment"
         android:name="com.njk.smollunchtray.EntreeFragment"
-        android:label="EntreeFragment" />
+        android:label="EntreeFragment" >
+        <action
+            android:id="@+id/action_entreeFragment_to_sideDishFragment"
+            app:destination="@id/sideDishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sideDishFragment"
+        android:name="com.njk.smollunchtray.SideDishFragment"
+        android:label="SideDishFragment" />
 </navigation>
