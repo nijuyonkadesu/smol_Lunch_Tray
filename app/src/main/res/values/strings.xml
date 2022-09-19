@@ -15,4 +15,7 @@
     <string name="soup">Butternut Squash Soup</string>
     <string name="potato">Spicy Potato</string>
     <string name="rice">Coconut Rice</string>
+    <string name="roll">Lunch Roll</string>
+    <string name="berries">Mixed Berries</string>
+    <string name="veggies">Pickled Veggies</string>
 </resources>

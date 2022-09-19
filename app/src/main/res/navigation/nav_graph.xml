@@ -22,5 +22,13 @@
     <fragment
         android:id="@+id/sideDishFragment"
         android:name="com.njk.smollunchtray.SideDishFragment"
-        android:label="SideDishFragment" />
+        android:label="SideDishFragment" >
+        <action
+            android:id="@+id/action_sideDishFragment_to_accompanimentFragment"
+            app:destination="@id/accompanimentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accompanimentFragment"
+        android:name="com.njk.smollunchtray.AccompanimentFragment"
+        android:label="AccompanimentFragment" />
 </navigation>

@@ -5,8 +5,8 @@
 
     <data>
         <variable
-            name="sideDishFragment"
-            type="com.njk.smollunchtray.SideDishFragment" />
+            name="accompanimentFragment"
+            type="com.njk.smollunchtray.AccompanimentFragment" />
         <variable
             name="viewModel"
             type="com.njk.smollunchtray.model.LunchViewModel" />
@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".SideDishFragment">
+        tools:context=".AccompanimentFragment">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -32,34 +32,26 @@
 
                     <RadioButton
                         style="@style/RadioTextBig"
-                        tools:text="Salad"
-                        android:text="@string/salad"
-                        android:onClick="@{()->sideDishFragment.chooseSideDish(1)}"
+                        tools:text="roll"
+                        android:text="@string/roll"
+                        android:onClick="@{()->accompanimentFragment.chooseEntree(1)}"
                         android:id="@+id/radio_button_1"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
                     <RadioButton
-                        tools:text="soup"
-                        android:text="@string/soup"
-                        android:onClick="@{()->sideDishFragment.chooseSideDish(2)}"
+                        tools:text="berries"
+                        android:text="@string/berries"
+                        android:onClick="@{()->accompanimentFragment.chooseEntree(2)}"
                         android:id="@+id/radio_button_2"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
                     <RadioButton
-                        tools:text="potato"
-                        android:text="@string/potato"
-                        android:onClick="@{()->sideDishFragment.chooseSideDish(3)}"
+                        tools:text="veggies"
+                        android:text="@string/veggies"
+                        android:onClick="@{()->accompanimentFragment.chooseEntree(3)}"
                         android:id="@+id/radio_button_3"
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"/>
-
-                    <RadioButton
-                        tools:text="rice"
-                        android:text="@string/rice"
-                        android:onClick="@{()->sideDishFragment.chooseSideDish(4)}"
-                        android:id="@+id/radio_button_4"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
@@ -71,7 +63,6 @@
                     android:text="@{@string/subtotal(viewModel.subtotal)}" />
                 <Button
                     android:id="@+id/next_btn"
-                    android:onClick="@{()->sideDishFragment.nextPage()}"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/next_btn"

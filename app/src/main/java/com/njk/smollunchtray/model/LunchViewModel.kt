@@ -16,9 +16,13 @@ class LunchViewModel: ViewModel() {
         "salad" to 2.50,
         "soup" to 3.0,
         "potato" to 2.0,
-        "rice" to 1.50
+        "rice" to 1.50,
+
+        "roll" to 0.50,
+        "berries" to 1.0,
+        "veggies" to 0.50
     )
-    private val inCartFoods = mutableListOf("lol", "lol", "lol")
+    private val inCartFoods = mutableListOf("lol", "lol", "lol") // entree, sideDish, accompaniment
 
     private var _subtotal = MutableLiveData<Double>()
     val subtotal: LiveData<String> = Transformations.map(_subtotal){

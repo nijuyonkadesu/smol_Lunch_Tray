@@ -6,39 +6,39 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.navigation.fragment.findNavController
-import com.njk.smollunchtray.databinding.FragmentSideDishBinding
+import com.njk.smollunchtray.databinding.FragmentAccompanimentBinding
 import com.njk.smollunchtray.model.LunchViewModel
 
-class SideDishFragment: Fragment() {
-    private var binding:FragmentSideDishBinding? = null
+class AccompanimentFragment: Fragment() {
+    private var binding: FragmentAccompanimentBinding? = null
     private val sharedViewModel: LunchViewModel by activityViewModels()
-    private val foodItems = arrayListOf("salad", "soup", "potato", "rice")
+    private val foodItems = arrayListOf("roll", "berries", "veggies")
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSideDishBinding.inflate(layoutInflater)
+        binding = FragmentAccompanimentBinding.inflate(layoutInflater)
         return binding!!.root
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding?.apply {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
-            sideDishFragment = this@SideDishFragment
+            accompanimentFragment = this@AccompanimentFragment
         }
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
     }
 
-    fun chooseSideDish(foodNumber: Int){
-        sharedViewModel.updateSubtotal(foodItems[foodNumber-1], 1)
+    fun chooseEntree(foodNumber: Int){
+        sharedViewModel.updateSubtotal(foodItems[foodNumber-1], 2)
     }
-    fun nextPage(){
-        findNavController().navigate(R.id.action_sideDishFragment_to_accompanimentFragment)
-    }
+    // TODO: Cancel & custom backstack
+    // TODO: Share Page
 }
