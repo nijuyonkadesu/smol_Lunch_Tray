@@ -35,6 +35,6 @@ class SideDishFragment: Fragment() {
     }
 
     fun chooseSideDish(foodNumber: Int){
-        sharedViewModel.updateSubtotal(foodItems[foodNumber-1])
+        sharedViewModel.updateSubtotal(foodItems[foodNumber-1], 1)
     }
 }

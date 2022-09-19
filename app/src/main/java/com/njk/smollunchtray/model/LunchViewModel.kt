@@ -1,6 +1,5 @@
 package com.njk.smollunchtray.model
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
@@ -19,7 +18,7 @@ class LunchViewModel: ViewModel() {
         "potato" to 2.0,
         "rice" to 1.50
     )
-    private val inCartFoods = mutableSetOf<String>()
+    private val inCartFoods = mutableListOf("lol", "lol", "lol")
 
     private var _subtotal = MutableLiveData<Double>()
     val subtotal: LiveData<String> = Transformations.map(_subtotal){
@@ -30,11 +29,16 @@ class LunchViewModel: ViewModel() {
         cleanVariables()
     }
 
-    fun updateSubtotal(putMeInCart: String){
-        val iswork = inCartFoods.add(putMeInCart)
-        inCartFoods.forEach{
-            menu[it]?.let { price -> _subtotal.value?.plus(price) } // TODO: Fix this
-            Log.d("price update", _subtotal.value.toString() + iswork.toString())
+    fun updateSubtotal(putMeInCart: String, foodType: Int){
+        if (inCartFoods[foodType] == putMeInCart) {
+            return
+        } else {
+            val takeMeOutOfCart = inCartFoods[foodType]
+            if (takeMeOutOfCart != "lol"){
+                _subtotal.value = _subtotal.value!!.minus(menu[takeMeOutOfCart] as Double) // reduce price for the removed item
+            }
+            inCartFoods[foodType] = putMeInCart
+            _subtotal.value = _subtotal.value!!.plus(menu[putMeInCart] as Double) // increase price of new food
         }
     }
 
@@ -42,5 +46,3 @@ class LunchViewModel: ViewModel() {
         _subtotal.value = 0.0
     }
 }
-// TODO: on revisiting page, and moving on should'nt add cost
-// TODO: prevent adding elements multiple elements on click radio

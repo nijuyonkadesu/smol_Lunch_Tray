@@ -39,7 +39,7 @@ class EntreeFragment: Fragment() {
     }
 
     fun chooseEntree(foodNumber: Int){
-        sharedViewModel.updateSubtotal(foodItems[foodNumber-1])
+        sharedViewModel.updateSubtotal(foodItems[foodNumber-1], 0)
     }
     fun nextPage(){
         findNavController().navigate(R.id.action_entreeFragment_to_sideDishFragment)
