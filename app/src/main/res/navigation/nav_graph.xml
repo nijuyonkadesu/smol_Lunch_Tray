@@ -30,5 +30,13 @@
     <fragment
         android:id="@+id/accompanimentFragment"
         android:name="com.njk.smollunchtray.AccompanimentFragment"
-        android:label="AccompanimentFragment" />
+        android:label="AccompanimentFragment" >
+        <action
+            android:id="@+id/action_accompanimentFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.njk.smollunchtray.SummaryFragment"
+        android:label="SummaryFragment" />
 </navigation>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="summaryFragment"
+            type="com.njk.smollunchtray.SummaryFragment" />
+        <variable
+            name="viewModel"
+            type="com.njk.smollunchtray.model.LunchViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        tools:context=".SummaryFragment">
+
+
+        <TextView
+            android:id="@+id/summary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_summary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            tools:text="Cauliflower"
+            android:id="@+id/entree_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/entree_choice(summaryFragment.fetchFood(1))}"
+            app:layout_constraintStart_toStartOf="@+id/summary_title"
+            app:layout_constraintTop_toBottomOf="@+id/summary_title" />
+
+        <TextView
+            android:id="@+id/side_dish_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/side_dish_choice(summaryFragment.fetchFood(2))}"
+            tools:text="salad"
+            app:layout_constraintStart_toStartOf="@+id/entree_choice"
+            app:layout_constraintTop_toBottomOf="@+id/entree_choice" />
+
+        <TextView
+            android:id="@+id/accompaniment_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="roll"
+            android:text="@{@string/accompaniment_choice(summaryFragment.fetchFood(3))}"
+            app:layout_constraintStart_toStartOf="@+id/side_dish_choice"
+            app:layout_constraintTop_toBottomOf="@+id/side_dish_choice" />
+
+        <TextView
+            android:id="@+id/side_dish_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$30"
+            android:text="@{@string/unit_price(summaryFragment.fetchPrice(2))}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/entree_choice" />
+
+        <TextView
+            android:id="@+id/entree_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/unit_price(summaryFragment.fetchPrice(1))}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/summary_title"
+            tools:text="$30" />
+
+        <TextView
+            android:id="@+id/accompaniment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="$30"
+            android:text="@{@string/unit_price(summaryFragment.fetchPrice(3))}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/side_dish_choice" />
+
+        <TextView
+            android:id="@+id/subtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Subtotal"
+            android:text="@{@string/subtotal(viewModel.subtotal)}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/tax_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Tax"
+            android:text="@{@string/tax_amount(viewModel.getTaxAmount())}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtotal" />
+
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Total"
+            android:text="@{@string/total_amount(viewModel.totalAmount())}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tax_amount" />
+
+        <Button
+            android:id="@+id/order_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/place_order"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/total_amount" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_btn"
+            style="?attr/materialButtonOutlinedStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/order_btn" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accompaniment_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -62,6 +62,7 @@
                     android:textAlignment="viewEnd"
                     android:text="@{@string/subtotal(viewModel.subtotal)}" />
                 <Button
+                    android:onClick="@{()-> accompanimentFragment.nextPage()}"
                     android:id="@+id/next_btn"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"

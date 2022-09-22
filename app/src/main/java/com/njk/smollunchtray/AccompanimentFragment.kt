@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.njk.smollunchtray.databinding.FragmentAccompanimentBinding
 import com.njk.smollunchtray.model.LunchViewModel
 
@@ -39,6 +40,11 @@ class AccompanimentFragment: Fragment() {
     fun chooseEntree(foodNumber: Int){
         sharedViewModel.updateSubtotal(foodItems[foodNumber-1], 2)
     }
+
+    fun nextPage(){
+        findNavController().navigate(R.id.action_accompanimentFragment_to_summaryFragment)
+    }
     // TODO: Cancel & custom backstack
     // TODO: Share Page
+    // TODO: title on each fragment
 }

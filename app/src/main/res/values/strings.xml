@@ -1,21 +1,32 @@
 <resources>
     <string name="app_name">smol Lunch Tray</string>
-
+<!--entree-->
     <string name="cauliflower">Cauliflower</string>
     <string name="bean">Three Bean Chilli</string>
     <string name="pasta">Mushroom Pasta</string>
     <string name="skillet">Spicy Black Bean Skillet</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="next_btn">Next</string>
-    <string name="start_btn">ORDER !</string>
-    <string name="cancel_btn">Cancel</string>
-    <string name="subtotal">Subtotal %s</string>
+<!--side dish-->
     <string name="salad">Summer Salad</string>
     <string name="soup">Butternut Squash Soup</string>
     <string name="potato">Spicy Potato</string>
     <string name="rice">Coconut Rice</string>
+<!--accompaniment-->
     <string name="roll">Lunch Roll</string>
     <string name="berries">Mixed Berries</string>
     <string name="veggies">Pickled Veggies</string>
+<!--buttons-->
+    <string name="next_btn">Next</string>
+    <string name="start_btn">ORDER !</string>
+    <string name="cancel_btn">Cancel</string>
+<!--summary-->
+    <string name="order_summary">Order Summary</string>
+    <string name="entree_choice">%s</string>
+    <string name="side_dish_choice">%s</string>
+    <string name="accompaniment_choice">%s</string>
+    <string name="unit_price">%s</string>
+
+    <string name="subtotal">Subtotal %s</string>
+    <string name="tax_amount">Tax: %s</string>
+    <string name="total_amount">TOTAL: %s</string>
+    <string name="place_order">Place Order!</string>
 </resources>
