@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content">
                 <RadioGroup
                     android:id="@+id/radioGroup"
-                    android:checkedButton="@+id/radio_button_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -79,6 +78,7 @@
                 <Button
                     style="?attr/materialButtonOutlinedStyle"
                     android:id="@+id/cancel_btn"
+                    android:onClick="@{()->entreeFragment.cancelOrder()}"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/cancel_btn"

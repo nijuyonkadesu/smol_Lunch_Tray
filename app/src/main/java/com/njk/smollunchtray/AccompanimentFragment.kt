@@ -44,7 +44,10 @@ class AccompanimentFragment: Fragment() {
     fun nextPage(){
         findNavController().navigate(R.id.action_accompanimentFragment_to_summaryFragment)
     }
-    // TODO: Cancel & custom backstack
+    fun cancelOrder(){
+        sharedViewModel.cleanVariables()
+        findNavController().navigate(R.id.action_accompanimentFragment_to_startPageFragment)
+    }
     // TODO: Share Page
     // TODO: title on each fragment
 }

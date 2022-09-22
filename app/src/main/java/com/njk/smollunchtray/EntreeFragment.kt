@@ -44,4 +44,8 @@ class EntreeFragment: Fragment() {
     fun nextPage(){
         findNavController().navigate(R.id.action_entreeFragment_to_sideDishFragment)
     }
+    fun cancelOrder(){
+        sharedViewModel.cleanVariables()
+        findNavController().navigate(R.id.action_entreeFragment_to_startPageFragment)
+    }
 }

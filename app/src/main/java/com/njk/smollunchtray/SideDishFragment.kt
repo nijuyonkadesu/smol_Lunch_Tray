@@ -41,4 +41,8 @@ class SideDishFragment: Fragment() {
     fun nextPage(){
         findNavController().navigate(R.id.action_sideDishFragment_to_accompanimentFragment)
     }
+    fun cancelOrder(){
+        sharedViewModel.cleanVariables()
+        findNavController().navigate(R.id.action_sideDishFragment_to_startPageFragment)
+    }
 }

@@ -20,9 +20,9 @@
     <string name="cancel_btn">Cancel</string>
 <!--summary-->
     <string name="order_summary">Order Summary</string>
-    <string name="entree_choice">%s</string>
-    <string name="side_dish_choice">%s</string>
-    <string name="accompaniment_choice">%s</string>
+    <string name="entree_choice">1. %s</string>
+    <string name="side_dish_choice">2. %s</string>
+    <string name="accompaniment_choice">3. %s</string>
     <string name="unit_price">%s</string>
 
     <string name="subtotal">Subtotal %s</string>

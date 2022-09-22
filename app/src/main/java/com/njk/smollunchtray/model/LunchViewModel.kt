@@ -20,7 +20,9 @@ class LunchViewModel: ViewModel() {
 
         "roll" to 0.50,
         "berries" to 1.0,
-        "veggies" to 0.50
+        "veggies" to 0.50,
+
+        "lol" to 0.0
     )
     private val _inCartFoods = mutableListOf("lol", "lol", "lol") // entree, sideDish, accompaniment
     private val tax = 0.5
@@ -64,7 +66,7 @@ class LunchViewModel: ViewModel() {
         }
     }
 
-    private fun cleanVariables(){
+    fun cleanVariables(){
         _subtotal.value = 0.0
         (0..2).forEach { _inCartFoods[it] = "lol" }
     }
