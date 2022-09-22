@@ -6,7 +6,7 @@
     <fragment
         android:id="@+id/startPageFragment"
         android:name="com.njk.smollunchtray.StartPageFragment"
-        android:label="StartPageFragment" >
+        android:label="@string/lunch_tray" >
         <action
             android:id="@+id/action_startPageFragment_to_entreeFragment"
             app:destination="@id/entreeFragment" />
@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/entreeFragment"
         android:name="com.njk.smollunchtray.EntreeFragment"
-        android:label="EntreeFragment" >
+        android:label="@string/choose_entree" >
         <action
             android:id="@+id/action_entreeFragment_to_sideDishFragment"
             app:destination="@id/sideDishFragment" />
@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/sideDishFragment"
         android:name="com.njk.smollunchtray.SideDishFragment"
-        android:label="SideDishFragment" >
+        android:label="@string/choose_side_dish" >
         <action
             android:id="@+id/action_sideDishFragment_to_accompanimentFragment"
             app:destination="@id/accompanimentFragment" />
@@ -40,7 +40,7 @@
     <fragment
         android:id="@+id/accompanimentFragment"
         android:name="com.njk.smollunchtray.AccompanimentFragment"
-        android:label="AccompanimentFragment" >
+        android:label="@string/choose_accompaniment" >
         <action
             android:id="@+id/action_accompanimentFragment_to_summaryFragment"
             app:destination="@id/summaryFragment" />
@@ -53,7 +53,7 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.njk.smollunchtray.SummaryFragment"
-        android:label="SummaryFragment" >
+        android:label="@string/enjoy" >
         <action
             android:id="@+id/action_summaryFragment_to_startPageFragment"
             app:destination="@id/startPageFragment"

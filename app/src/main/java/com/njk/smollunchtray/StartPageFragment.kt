@@ -5,14 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.njk.smollunchtray.databinding.FragmentStartPageBinding
-import com.njk.smollunchtray.model.LunchViewModel
 
 class StartPageFragment: Fragment() {
     private var binding: FragmentStartPageBinding? = null
-    val sharedViewModel: LunchViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">smol Lunch Tray</string>
+    <string name="choose_entree">Entrée Dishes</string>
+    <string name="lunch_tray">Lunch Tray</string>
+    <string name="choose_side_dish">Side Dishes</string>
+    <string name="choose_accompaniment">Accompaniment Dishes</string>
+    <string name="enjoy">Have a Good Day</string>
 <!--entree-->
     <string name="cauliflower">Cauliflower</string>
     <string name="bean">Three Bean Chilli</string>
