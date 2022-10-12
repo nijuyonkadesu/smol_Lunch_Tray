@@ -36,6 +36,15 @@
                         android:id="@+id/radio_button_1"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
+                    <TextView
+                        style="@style/Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salad_desc"/>
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_marginHorizontal="@dimen/margin_between_elements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
 
                     <RadioButton
                         tools:text="soup"
@@ -44,6 +53,15 @@
                         android:id="@+id/bean"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
+                    <TextView
+                        style="@style/Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/soup_desc"/>
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_marginHorizontal="@dimen/margin_between_elements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
 
                     <RadioButton
                         tools:text="potato"
@@ -52,6 +70,15 @@
                         android:id="@+id/pasta"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
+                    <TextView
+                        style="@style/Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/potato_desc"/>
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_marginHorizontal="@dimen/margin_between_elements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
 
                     <RadioButton
                         tools:text="rice"
@@ -60,6 +87,15 @@
                         android:id="@+id/skillet"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
+                    <TextView
+                        style="@style/Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rice_desc"/>
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_marginHorizontal="@dimen/margin_between_elements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
 
                 </RadioGroup>
                 <TextView
@@ -68,17 +104,21 @@
                     android:textAlignment="viewEnd"
                     android:text="@{@string/subtotal(viewModel.subtotal)}" />
                 <Button
+                    android:layout_width="@dimen/button_width"
+                    android:layout_gravity="center_horizontal"
+
                     android:id="@+id/next_btn"
                     android:onClick="@{()->sideDishFragment.nextPage()}"
-                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/next_btn"
                     app:layout_constraintEnd_toEndOf="parent"/>
                 <Button
+                    android:layout_width="@dimen/button_width"
+                    android:layout_gravity="center_horizontal"
                     style="?attr/materialButtonOutlinedStyle"
+
                     android:id="@+id/cancel_btn"
                     android:onClick="@{()->sideDishFragment.cancelOrder()}"
-                    android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/cancel_btn"
                     app:layout_constraintEnd_toEndOf="parent"/>

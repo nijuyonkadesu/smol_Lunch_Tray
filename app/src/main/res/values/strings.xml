@@ -34,8 +34,19 @@
     <string name="tax_amount">Tax: %s</string>
     <string name="total_amount">TOTAL: %s</string>
     <string name="place_order">Place Order!</string>
+
+<!--description-->
     <string name="cauliflower_desc">Whole cauliflower brinded, roasted, and deep fried</string>
     <string name="bean_desc">Black beans, red beans, kidney beans slowly cooked topped with onion</string>
     <string name="pasta_desc">Penne pastas, mushroom, basil with plum tomatoes cooked in garlic and olive oil</string>
     <string name="skillet_desc">Seasonal vegetables, black beans , house spice blend, served with avacardo and quick pickled onions</string>
+
+    <string name="salad_desc">Heirloom tomatoes, butter lettuce, peaches, avocado, balsamic dressing</string>
+    <string name="soup_desc">Roasted butternut squash, roasted peppers, chili oil</string>
+    <string name="potato_desc">Marble potatoes, roasted, and fried in house spice blend</string>
+    <string name="rice_desc">Rice, coconut milk, lime and sugar</string>
+
+    <string name="roll_desc">Fresh baked roll made in house</string>
+    <string name="berries_desc">Strawberries, blueberries, raspberries and huckleberries</string>
+    <string name="veggies_desc">Pickled cucumbers and carrots, made in home</string>
 </resources>

@@ -17,4 +17,8 @@
     <style name="SubtotalEmphasis" parent="Widget.MaterialComponents.TextView">
         <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
     </style>
+<!--  Spacer  -->
+    <style name="Spacer" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_marginVertical">@dimen/margin_between_elements</item>
+    </style>
 </resources>
