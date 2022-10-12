@@ -30,7 +30,6 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
-                        style="@style/RadioTextBig"
                         tools:text="Salad"
                         android:text="@string/salad"
                         android:onClick="@{()->sideDishFragment.chooseSideDish(1)}"
@@ -42,7 +41,7 @@
                         tools:text="soup"
                         android:text="@string/soup"
                         android:onClick="@{()->sideDishFragment.chooseSideDish(2)}"
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/bean"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
@@ -50,7 +49,7 @@
                         tools:text="potato"
                         android:text="@string/potato"
                         android:onClick="@{()->sideDishFragment.chooseSideDish(3)}"
-                        android:id="@+id/radio_button_3"
+                        android:id="@+id/pasta"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
@@ -58,7 +57,7 @@
                         tools:text="rice"
                         android:text="@string/rice"
                         android:onClick="@{()->sideDishFragment.chooseSideDish(4)}"
-                        android:id="@+id/radio_button_4"
+                        android:id="@+id/skillet"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 

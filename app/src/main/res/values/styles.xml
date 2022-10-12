@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="RadioTextBig" parent="Theme.SmolLunchTray">
-        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+
+<!--  Radio Button Text Size Thanks @synsynsyn for helping me out  -->
+
+    <style name="RadioButtonText" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
+    </style>
+
+<!--  Text Description  -->
+    <style name="Description" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="android:layout_marginHorizontal">@dimen/margin_between_elements</item>
+        <item name="android:layout_marginBottom">@dimen/margin_between_elements</item>
+    </style>
+<!--  Subtotal  -->
+    <style name="SubtotalEmphasis" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>
     </style>
 </resources>

@@ -34,4 +34,8 @@
     <string name="tax_amount">Tax: %s</string>
     <string name="total_amount">TOTAL: %s</string>
     <string name="place_order">Place Order!</string>
+    <string name="cauliflower_desc">Whole cauliflower brinded, roasted, and deep fried</string>
+    <string name="bean_desc">Black beans, red beans, kidney beans slowly cooked topped with onion</string>
+    <string name="pasta_desc">Penne pastas, mushroom, basil with plum tomatoes cooked in garlic and olive oil</string>
+    <string name="skillet_desc">Seasonal vegetables, black beans , house spice blend, served with avacardo and quick pickled onions</string>
 </resources>

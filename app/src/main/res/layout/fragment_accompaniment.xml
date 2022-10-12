@@ -30,7 +30,6 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
-                        style="@style/RadioTextBig"
                         tools:text="roll"
                         android:text="@string/roll"
                         android:onClick="@{()->accompanimentFragment.chooseEntree(1)}"
@@ -42,7 +41,7 @@
                         tools:text="berries"
                         android:text="@string/berries"
                         android:onClick="@{()->accompanimentFragment.chooseEntree(2)}"
-                        android:id="@+id/radio_button_2"
+                        android:id="@+id/bean"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
@@ -50,7 +49,7 @@
                         tools:text="veggies"
                         android:text="@string/veggies"
                         android:onClick="@{()->accompanimentFragment.chooseEntree(3)}"
-                        android:id="@+id/radio_button_3"
+                        android:id="@+id/pasta"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"/>
 
