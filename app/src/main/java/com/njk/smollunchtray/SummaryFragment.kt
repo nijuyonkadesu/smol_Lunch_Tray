@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.njk.smollunchtray.databinding.FragmentSummaryBinding
-import com.njk.smollunchtray.model.LunchViewModel
+import com.njk.smollunchtray.viewmodel.LunchViewModel
 
 class SummaryFragment: Fragment() {
     private var binding: FragmentSummaryBinding? = null

@@ -9,7 +9,7 @@
             type="com.njk.smollunchtray.AccompanimentFragment" />
         <variable
             name="viewModel"
-            type="com.njk.smollunchtray.model.LunchViewModel" />
+            type="com.njk.smollunchtray.viewmodel.LunchViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

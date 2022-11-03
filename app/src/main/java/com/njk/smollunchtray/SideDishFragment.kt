@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.njk.smollunchtray.databinding.FragmentSideDishBinding
-import com.njk.smollunchtray.model.LunchViewModel
+import com.njk.smollunchtray.viewmodel.LunchViewModel
 
 class SideDishFragment: Fragment() {
     private var binding:FragmentSideDishBinding? = null

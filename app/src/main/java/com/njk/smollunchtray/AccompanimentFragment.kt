@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.njk.smollunchtray.databinding.FragmentAccompanimentBinding
-import com.njk.smollunchtray.model.LunchViewModel
+import com.njk.smollunchtray.viewmodel.LunchViewModel
 
 class AccompanimentFragment: Fragment() {
     private var binding: FragmentAccompanimentBinding? = null
@@ -48,6 +48,4 @@ class AccompanimentFragment: Fragment() {
         sharedViewModel.cleanVariables()
         findNavController().navigate(R.id.action_accompanimentFragment_to_startPageFragment)
     }
-    // TODO: Share Page
-    // TODO: title on each fragment
 }
